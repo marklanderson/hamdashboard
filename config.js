@@ -1,5 +1,7 @@
-const disableSetup = false;
-var topBarCenterText = `VA3HDL - FN04ga`;
+const disableSetup = true;
+var topBarCenterText = `W0MMK - EN33`;
+
+
 
 // Grid layout
 var layout_cols = 4;
@@ -10,45 +12,36 @@ var layout_rows = 3;
 // The values are [color code, menu text, target link, scale factor, side],
 // add new lines following the structure for extra menu options. The comma at the end is important!
 var aURL = [
-  ["2196F3", "CLUBLOG", "https://clublog.org/livestream/VA3HDL", "1.7"],
-  [
-    "2196F3",
-    "CONTEST",
-    "https://www.contestcalendar.com/fivewkcal.html",
-    "1",
-  ],
+
+  ["2196F3",     "SEMNARC",     "https://semnarc.org/",     "1",   ],
+
+  ["2196F3", "TIME.IS", "https://time.is/", "1", ],
+
+  ["2196F3", "POTA", "https://pota.app/", "1.7"],
+
+  ["2196F3",  "CONTEST",     "https://www.contestcalendar.com/fivewkcal.html",    "1",   ],
+
   ["2196F3", "DX CLUSTER", "https://dxcluster.ha8tks.hu/map/", "1"],
-  [
-    "2196F3",
-    "LIGHTNING",
-    "https://map.blitzortung.org/#3.87/36.5/-89.41",
-    "1",
-    "R",
-  ],
-  ["2196F3", "PISTAR", "http://pi-star.local/", "1.2"],
-  [
-    "2196F3",
-    "RADAR",
-    "https://weather.gc.ca/?layers=alert,radar&center=43.39961001,-78.53212031&zoom=6&alertTableFilterProv=ON",
-    "1",
-    "R"
-  ],
-  ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
-  [
-    "2196F3",
-    "WEATHER",
-    "https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=44.0157&lon=-79.4591&zoom=5",
-    "1",
-    "R",
-  ],
-  [
-    "2196F3",
-    "WINDS",
-    "https://earth.nullschool.net/#current/wind/surface/level/orthographic=-78.79,44.09,3000",
-    "1",
-    "R",
-  ],
+
+<!---    ["2196F3", "APRS", "https://aprs.fi/", "1", "R", ], ---!>
+
+    ["2196F3",    "ADV RADAR",    "https://radar.weather.gov/",    "1",    "R",  ],
+
+    ["2196F3",     "WINDS",     "https://earth.nullschool.net/#current/wind/surface/level/orthographic=-78.79,44.09,3000",
+    "1",     "R",   ],
+
+  ["2196F3",    "LIGHTNING",    "https://map.blitzortung.org/#3.87/36.5/-89.41",     "1",    "R",  ],
+
+   ["2196F3",    "SPACE WEATHER",    "https://www.swpc.noaa.gov/",     "1",    "R",  ],
+
+    ["2196F3",    "QRZ LOOKUP",    "https://www.qrz.com/lookup",     "1",    "R",  ],
+
+
+
+
 ];
+
+
 
 // Dashboard items
 // Structure is Title, Image Source URL
@@ -59,40 +52,51 @@ var aURL = [
 var aIMG = [
   ["RADAR", "https://radar.weather.gov/ridge/standard/CONUS_loop.gif"],
   [
-    "LOCAL RADAR",
-    "https://radar.weather.gov/ridge/standard/KNQA_loop.gif",
+    "NWS RADAR LACROSSE WI",
+    "https://radar.weather.gov/ridge/standard/KARX_loop.gif",
   ],
   [
-    "NOAA D-RAP",
-    "https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png",
+    "NWS RADAR SOUTH DAKOTA",
+    "https://radar.weather.gov/ridge/standard/KFSD_loop.gif",
   ],
   [
-    "ISS POSITION",
-    "https://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544",
+    "SATELLITE",
+    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/umv/EXTENT3/20250470916-20250471311-GOES16-GLM-UMV-EXTENT3-600x600.gif",
   ],
+    [
+      "SPD DAY 1 ",
+      "https://www.spc.noaa.gov/products/outlook/day1otlk_1300.gif",
+  ],
+
   [
-    "SATELLITE CAN",
-    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/can/EXTENT3/GOES16-CAN-EXTENT3-1125x560.gif",
+    "THUNDERSTORM",
+    "https://www.spc.noaa.gov/products/exper/enhtstm/imgs/enh_1600.gif",
   ],
-  [
-    "SATELLITE CGL",
-    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/cgl/EXTENT3/GOES16-CGL-EXTENT3-600x600.gif",
-  ],
+
+
   [
     "LIGHTNING",
     "https://images.lightningmaps.org/blitzortung/america/index.php?animation=usa",
   ],
+
+   ["APRS", "iframe|https://aprs-map.info/?center=43.8553,-92.1863&zoom=9"],
+
   [
-    "LIGHTNING LOCAL",
-    "https://www.blitzortung.org/en/Images/image_b_ny.png",
+    "10M = yellow 6M = orange",
+    "https://www.tvcomm.co.uk/g7izu/Autosave/NA_ES_AutoSave.JPG",
   ],
-  ["YOUTUBE EXAMPLE", "iframe|https://www.youtube.com/embed/fzPFaXAV_2Y?autoplay=1&mute=1"],
+
+
   [
-    "WEBSITE EXAMPLE",
-    "iframe|https://globe.adsbexchange.com/?airport=YYZ",
+    "PROP",
+    "https://prop.kc2g.com/renders/current/mufd-normal-now.svg",
   ],
-  ["VIDEO EXAMPLE", "https://himawari8.nict.go.jp/movie/720/20240611_pifd.mp4"],
-  ["HF PROPAGATION",
+
+  ["MUF", "https://www.hamqsl.com/solarmuf.php"],
+
+
+
+  ["HF",
     "https://www.hamqsl.com/solar101vhf.php"],
 ];
 

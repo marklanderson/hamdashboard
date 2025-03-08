@@ -23,7 +23,7 @@ var aURL = [
 
   ["2196F3", "DX CLUSTER", "https://dxcluster.ha8tks.hu/map/", "1"],
 
-<!---    ["2196F3", "APRS", "https://aprs.fi/", "1", "R", ], ---!>
+<!---  ---!>  ["2196F3", "BAND PLAN", "https://www.arrl.org/band-plan", "1", "R", ], 
 
     ["2196F3",    "ADV RADAR",    "https://radar.weather.gov/",    "1",    "R",  ],
 
@@ -60,8 +60,8 @@ var aIMG = [
     "https://radar.weather.gov/ridge/standard/KFSD_loop.gif",
   ],
   [
-    "SATELLITE",
-    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/umv/EXTENT3/20250470916-20250471311-GOES16-GLM-UMV-EXTENT3-600x600.gif",
+    "BEACON",
+    "https://www.reversebeacon.net/main.php?rows=10&max_age=10,hours&bands=160,80,60,40,30,20,17,15,12,10,6,4,2&spot_types=3&hide=distance_km",
   ],
     [
       "SPD DAY 1 ",
